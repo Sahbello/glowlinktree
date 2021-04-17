@@ -8,7 +8,7 @@ const transition = (element) => {
       1
     );`;
 
-  link.style.setProperty("--transition-time", time + "s");
+  link.style.css.setProperty("--transition-time", time + "s");
   setTimeout(transition, time * 1000);
 };
 
@@ -23,7 +23,7 @@ const setTransitions = () => {
       1
     );`;
 
-    link.style.setProperty("--transition-time", time + "s");
+    link.style.css.setProperty("--transition-time", time + "s");
     setTimeout(transition, time * 1000);
   }
 };
